@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SQLite;
+using PoEAA_DataMapper.Database;
+using PoEAA_DataMapper.Domain;
 
-namespace PoEAA_DataMapper
+namespace PoEAA_DataMapper.Mapper
 {
-    abstract class AbstractMapper
+    public abstract class AbstractMapper
     {
         protected Dictionary<int, DomainObject> LoadedMap = new Dictionary<int, DomainObject>();
         protected abstract string FindStatement();

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PoEAA_DataMapper.Database\PoEAA_DataMapper.Database.csproj" />
+    <ProjectReference Include="..\PoEAA_DataMapper.Domain\PoEAA_DataMapper.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

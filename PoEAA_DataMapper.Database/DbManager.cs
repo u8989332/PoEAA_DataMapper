@@ -1,6 +1,6 @@
 using System.Data.SQLite;
 
-namespace PoEAA_DataMapper
+namespace PoEAA_DataMapper.Database
 {
     public static class DbManager
     {

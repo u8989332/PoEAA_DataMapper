@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoEAA_DataMapper", "PoEAA_DataMapper\PoEAA_DataMapper.csproj", "{29DF8AEA-5007-494D-83A2-F39BBE7062B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoEAA_DataMapper.Domain", "PoEAA_DataMapper.Domain\PoEAA_DataMapper.Domain.csproj", "{679DEE1C-2D5B-47A4-8AB3-9E08F385F621}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoEAA_DataMapper.Mapper", "PoEAA_DataMapper.Mapper\PoEAA_DataMapper.Mapper.csproj", "{E77FBF5E-A11D-4A6F-B8D5-F1343960BF66}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoEAA_DataMapper.Database", "PoEAA_DataMapper.Database\PoEAA_DataMapper.Database.csproj", "{9B64D1A3-A572-4F24-8E5E-EB15C5F60CB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29DF8AEA-5007-494D-83A2-F39BBE7062B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29DF8AEA-5007-494D-83A2-F39BBE7062B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29DF8AEA-5007-494D-83A2-F39BBE7062B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29DF8AEA-5007-494D-83A2-F39BBE7062B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{679DEE1C-2D5B-47A4-8AB3-9E08F385F621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{679DEE1C-2D5B-47A4-8AB3-9E08F385F621}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{679DEE1C-2D5B-47A4-8AB3-9E08F385F621}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{679DEE1C-2D5B-47A4-8AB3-9E08F385F621}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E77FBF5E-A11D-4A6F-B8D5-F1343960BF66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E77FBF5E-A11D-4A6F-B8D5-F1343960BF66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E77FBF5E-A11D-4A6F-B8D5-F1343960BF66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E77FBF5E-A11D-4A6F-B8D5-F1343960BF66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B64D1A3-A572-4F24-8E5E-EB15C5F60CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B64D1A3-A572-4F24-8E5E-EB15C5F60CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B64D1A3-A572-4F24-8E5E-EB15C5F60CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B64D1A3-A572-4F24-8E5E-EB15C5F60CB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE0591EA-33DB-4FE5-BF9E-87F73D1C0CA3}
+	EndGlobalSection
+EndGlobal

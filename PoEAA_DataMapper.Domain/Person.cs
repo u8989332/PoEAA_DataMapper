@@ -1,12 +1,12 @@
 ﻿using CodeParadise.Money;
 
-namespace PoEAA_DataMapper
+namespace PoEAA_DataMapper.Domain
 {
-    internal class Person : DomainObject
+    public class Person : DomainObject
     {
-        public string LastName { get; }
-        public string FirstName { get; }
-        public int NumberOfDependents { get; }
+        public string LastName { get; set; }
+        public string FirstName { get; set; }
+        public int NumberOfDependents { get; set; }
         public Person(int id, string lastName, string firstName, int numberOfDependents)
         {
             Id = id;

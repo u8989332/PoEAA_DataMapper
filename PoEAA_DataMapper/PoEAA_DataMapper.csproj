@@ -10,4 +10,9 @@
     <PackageReference Include="System.Data.SQLite" Version="1.0.114.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PoEAA_DataMapper.Database\PoEAA_DataMapper.Database.csproj" />
+    <ProjectReference Include="..\PoEAA_DataMapper.Mapper\PoEAA_DataMapper.Mapper.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,6 +1,6 @@
-﻿namespace PoEAA_DataMapper
+﻿namespace PoEAA_DataMapper.Mapper
 {
-    internal interface IStatementSource
+    public interface IStatementSource
     {
         string Sql { get; }
         object[] Parameters { get; }

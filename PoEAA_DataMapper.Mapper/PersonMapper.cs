@@ -1,12 +1,14 @@
-﻿using System;
+﻿using PoEAA_DataMapper.Database;
+using PoEAA_DataMapper.Domain;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SQLite;
 using System.Linq;
 
-namespace PoEAA_DataMapper
+namespace PoEAA_DataMapper.Mapper
 {
-    class PersonMapper : AbstractMapper
+    public class PersonMapper : AbstractMapper, IPersonFinder
     {
         private const string Columns = " id, lastname, firstname, numberOfDependents ";
 
@@ -74,9 +76,15 @@ namespace PoEAA_DataMapper
             return (Person) AbstractFind(id);
         }
 
-        public List<Person> FindByLastName2(string pattern)
+        public IList<Person> FindByLastName2(string pattern)
         {
             return FindMany(new FindByLastName(pattern))
+                .Cast<Person>().ToList();
+        }
+
+        public IList<Person> FinAll()
+        {
+            return FindMany(new FindAllStatement())
                 .Cast<Person>().ToList();
         }
 
@@ -116,7 +124,7 @@ namespace PoEAA_DataMapper
             }
         }
 
-        class FindByLastName : IStatementSource
+        private class FindByLastName : IStatementSource
         {
             private readonly string _lastName;
 
@@ -134,6 +142,22 @@ namespace PoEAA_DataMapper
             public FindByLastName(string lastName)
             {
                 _lastName = lastName;
+            }
+        }
+
+        private class FindAllStatement : IStatementSource
+        {
+            private readonly string _lastName;
+
+            public string Sql { get; } =
+                "SELECT * FROM person";
+
+            public object[] Parameters
+            {
+                get
+                {
+                    return new object[] {};
+                }
             }
         }
     }
